@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Incognito Photographer</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 800px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/WebPhoto1.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/WebPhoto1.data",
+        frameworkUrl: "Build/WebPhoto1.framework.js",
+        codeUrl: "Build/WebPhoto1.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "EBACOMIX",
+        productName: "Incognito Photographer",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
